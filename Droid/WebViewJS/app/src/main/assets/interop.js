@@ -1,10 +1,10 @@
 function sendMessage(message) {
-    document.getElementById("swift").value = message;
+    document.getElementById("java").value = message;
 }
 
 function callBack(message) {
     try {
-        webkit.messageHandlers.callBack.postMessage(message);
+        window.JSInterface.logMessage(document.getElementById("message").value);
     } catch(err) {
         document.getElementById("error").innerHTML = err;
     }

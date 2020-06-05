@@ -9,15 +9,16 @@ import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 public class FirstFragment extends Fragment {
 
     private WebView webView;
+    private EditText tbxEditIn;
+    private EditText tbxEditOut;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,8 +30,15 @@ public class FirstFragment extends Fragment {
 
         super.onViewCreated(view, savedInstanceState);
 
+        JavaScriptInterface jsInterface = new JavaScriptInterface(this);
+
         webView = (WebView) view.findViewById(R.id.webView);
+        tbxEditIn = (EditText) view.findViewById(R.id.tbxIn);
+        tbxEditOut = (EditText) view.findViewById(R.id.tbxOut);
+
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.addJavascriptInterface(jsInterface, "JSInterface");
+
         webView.setWebViewClient(new WebViewClient() {
 
             @SuppressWarnings("deprecation")
@@ -52,8 +60,13 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                webView.evaluateJavascript("sendMessage('ahoj');", null);
+                webView.evaluateJavascript("sendMessage('" + tbxEditOut.getText().toString() + "');", null);
             }
         });
+    }
+
+    public void onWebViewCallBack(String message) {
+
+        tbxEditIn.setText(message);
     }
 }
