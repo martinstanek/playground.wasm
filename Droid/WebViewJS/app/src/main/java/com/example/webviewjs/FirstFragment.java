@@ -51,6 +51,8 @@ public class FirstFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
+
+                webView.evaluateJavascript("sendMessage('ahoj');", null);
             }
         });
     }
