@@ -41,19 +41,16 @@ public class FirstFragment extends Fragment {
             @TargetApi(android.os.Build.VERSION_CODES.M)
             @Override
             public void onReceivedError(WebView view, WebResourceRequest req, WebResourceError rerr) {
-                // Redirect to deprecated method, so you can use it in all SDK versions
                 onReceivedError(view, rerr.getErrorCode(), rerr.getDescription().toString(), req.getUrl().toString());
             }
         });
+
+        webView.loadUrl("file:///android_asset/index.html");
 
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-
-                // assets/shared/index.html
-                // webView.loadUrl("http://google.com");
-                webView.loadUrl("file:///android_asset/index.html");
             }
         });
     }
