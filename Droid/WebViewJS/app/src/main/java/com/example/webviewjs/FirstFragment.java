@@ -53,7 +53,7 @@ public class FirstFragment extends Fragment {
 
                 // assets/shared/index.html
                 // webView.loadUrl("http://google.com");
-                webView.loadUrl("file://assets/shared/index.html");
+                webView.loadUrl("file:///android_asset/index.html");
             }
         });
     }
