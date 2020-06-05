@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{7A4FCF28-E5C3-48FB-A423-BC585E2B7C2D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blazor.NET/Client/Blazor.NET.Client.csproj">
+    <Files>
+      <File FileName="Blazor.NET/Client/Blazor.NET.Client.csproj" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Blazor.NET" expanded="True">
+            <Node name="Blazor.NET.Client" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Blazor.NET.Server PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

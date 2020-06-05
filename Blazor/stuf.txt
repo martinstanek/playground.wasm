@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/39336235/wkwebview-does-load-resources-from-local-document-folder
+
+https://stackoverflow.com/questions/36246495/swift-ios-cache-wkwebview-content-for-offline-view

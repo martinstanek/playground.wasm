@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="./interop.js"></script>
+<head>
+    
+<body>
+
+<div style="text-align:center;">
+    <p style="font-family:verdana;">The Shared World<p>
+</div>
+
+<table cellspacing="10" style="font-family:verdana;">
+    <tr><td>Message</td><td><input id="message" type="text" value="Hello from the Shared!"></td></tr>
+    <tr><td>Swift</td><td><input id="swift" type="text"/></td></tr>
+</table>
+
+<div style="text-align:center;">
+    <button type="button" onclick="callBack(document.getElementById('message').value)">send to swift</button>
+</div>
+
+<div id="error"></div>
+
+</body>
+</html> 
