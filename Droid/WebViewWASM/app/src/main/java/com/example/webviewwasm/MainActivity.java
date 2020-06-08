@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        webView.loadUrl("https://www.google.com");
+        // webView.loadUrl("https://www.google.com");
+        webView.loadUrl("file:///android_asset/WASM/index.html");
     }
 }
