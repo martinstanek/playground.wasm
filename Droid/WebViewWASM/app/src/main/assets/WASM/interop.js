@@ -1,10 +1,15 @@
 function callWasm(name)
 {
-    document.getElementById("output").value = "calling wasm ...";
+    document.getElementById("output").value = "calling wasm from JS ...";
     document.getElementById("output").value = sayHelloWasm(name);
     
-    //webkit.messageHandlers.callBack.postMessage(document.getElementById("output").value);
-    //window.JSInterface.logMessage(document.getElementById("output").value);
+    window.JSInterface.logMessage(document.getElementById("output").value);
+}
+
+function callWasmFromJava(name)
+{
+    document.getElementById("output").value = "calling wasm from Java...";
+    document.getElementById("output").value = sayHelloWasm(name);
 }
 
 function sayHelloWasm(name)
