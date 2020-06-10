@@ -6,36 +6,41 @@ import android.annotation.TargetApi;
 import android.os.Bundle;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.google.webviewlocalserver.WebViewLocalServer;
+
+import java.io.File;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
     private WebView webView;
+    private WebViewLocalServer localServer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+        localServer = new WebViewLocalServer(this);
+
+        WebViewLocalServer.AssetHostingDetails ahd = localServer.hostAssets("WASM");
 
         webView = findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
 
         webView.setWebViewClient(new WebViewClient() {
-
-            @SuppressWarnings("deprecation")
-            @Override
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-            }
-
-            @TargetApi(android.os.Build.VERSION_CODES.M)
-            @Override
-            public void onReceivedError(WebView view, WebResourceRequest req, WebResourceError rerr) {
-                onReceivedError(view, rerr.getErrorCode(), rerr.getDescription().toString(), req.getUrl().toString());
-            }
+          @Override
+            public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
+              return localServer.shouldInterceptRequest(request);
+          }
         });
 
-        // webView.loadUrl("https://www.google.com");
-        webView.loadUrl("file:///android_asset/WASM/index.html");
+        webView.loadUrl(ahd.getHttpsPrefix().buildUpon().appendPath("index.html").build().toString());
     }
 }
