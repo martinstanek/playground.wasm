@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{BD8FB20B-01B9-46C1-87FA-5FE9FC9D5BC0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DeepLearning.MacOS/AppDelegate.cs">
+    <Files>
+      <File FileName="DeepLearning.MacOS/AppDelegate.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DeepLearning.Training" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DeepLearning.MacOS FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DeepLearning.Training PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

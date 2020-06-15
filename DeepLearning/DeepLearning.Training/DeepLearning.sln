@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning.Training", "DeepLearning.Training\DeepLearning.Training.csproj", "{BD8FB20B-01B9-46C1-87FA-5FE9FC9D5BC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning.MacOS", "DeepLearning.MacOS\DeepLearning.MacOS.csproj", "{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD8FB20B-01B9-46C1-87FA-5FE9FC9D5BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8FB20B-01B9-46C1-87FA-5FE9FC9D5BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8FB20B-01B9-46C1-87FA-5FE9FC9D5BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8FB20B-01B9-46C1-87FA-5FE9FC9D5BC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
