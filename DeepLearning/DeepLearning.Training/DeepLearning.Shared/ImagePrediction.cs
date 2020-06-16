@@ -1,6 +1,6 @@
 ﻿using Microsoft.ML.Data;
 
-namespace DeepLearning.Training
+namespace DeepLearning.Shared
 {
     public class ImagePrediction
     {

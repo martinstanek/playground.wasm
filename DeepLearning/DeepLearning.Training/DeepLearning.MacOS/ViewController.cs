@@ -1,6 +1,7 @@
 ﻿using System;
 using AppKit;
 using Foundation;
+// using DeepLearning.Predication;
 
 namespace DeepLearning.MacOS
 {
@@ -13,18 +14,16 @@ namespace DeepLearning.MacOS
             base.ViewDidLoad();
 
             imgView.RegisterForDraggedTypes(new string[] { "*.jpg" });
+            ((ImageView) imgView).DraggingDidEnd += OnDraggingEnd;
         }
 
-        public override NSObject RepresentedObject
+        private void OnDraggingEnd(object sender, string path)
         {
-            get
-            {
-                return base.RepresentedObject;
-            }
-            set
-            {
-                base.RepresentedObject = value;
-            }
+            // var predication = new Predicator();
+
+            lblImage.StringValue = path;
         }
+
+        public override NSObject RepresentedObject => base.RepresentedObject;
     }
 }

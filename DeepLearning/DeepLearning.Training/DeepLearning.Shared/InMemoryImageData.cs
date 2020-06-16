@@ -1,4 +1,4 @@
-﻿namespace DeepLearning.Training
+﻿namespace DeepLearning.Shared
 {
     public class InMemoryImageData
     {

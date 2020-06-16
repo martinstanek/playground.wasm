@@ -5,6 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning.Training", "De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning.MacOS", "DeepLearning.MacOS\DeepLearning.MacOS.csproj", "{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning.Predication", "DeepLearning.Predication\DeepLearning.Predication.csproj", "{5F01FCDF-3AC4-4398-94FF-4D0B863325A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning.Shared", "DeepLearning.Shared\DeepLearning.Shared.csproj", "{A8D32D7D-05F3-4FF9-83CC-403B45EC202E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning.Prediction.Test", "DeepLearning.Prediction.Console\DeepLearning.Prediction.Test.csproj", "{3066F955-13D9-44D6-A75B-7AD839C841CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +25,17 @@ Global
 		{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F01FCDF-3AC4-4398-94FF-4D0B863325A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F01FCDF-3AC4-4398-94FF-4D0B863325A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F01FCDF-3AC4-4398-94FF-4D0B863325A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F01FCDF-3AC4-4398-94FF-4D0B863325A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D32D7D-05F3-4FF9-83CC-403B45EC202E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D32D7D-05F3-4FF9-83CC-403B45EC202E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D32D7D-05F3-4FF9-83CC-403B45EC202E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D32D7D-05F3-4FF9-83CC-403B45EC202E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3066F955-13D9-44D6-A75B-7AD839C841CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3066F955-13D9-44D6-A75B-7AD839C841CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3066F955-13D9-44D6-A75B-7AD839C841CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3066F955-13D9-44D6-A75B-7AD839C841CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

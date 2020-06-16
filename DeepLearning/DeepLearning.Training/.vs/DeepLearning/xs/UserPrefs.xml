@@ -1,14 +1,27 @@
-﻿<Properties StartupConfiguration="{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DeepLearning.MacOS/ViewController.cs">
+﻿<Properties StartupConfiguration="{3066F955-13D9-44D6-A75B-7AD839C841CB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DeepLearning.Predication/DeepLearning.Predication.csproj">
     <Files>
-      <File FileName="DeepLearning.MacOS/ViewController.cs" Line="15" Column="13" />
+      <File FileName="DeepLearning.MacOS/ViewController.cs" Line="24" Column="41" />
+      <File FileName="DeepLearning.Prediction.Console/Program.cs" Line="14" Column="1" />
+      <File FileName="DeepLearning.Predication/Predicator.cs" Line="15" Column="1" />
+      <File FileName="DeepLearning.Predication/DeepLearning.Predication.csproj" Line="12" Column="79" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DeepLearning" expanded="True">
-            <Node name="DeepLearning.MacOS" expanded="True">
-              <Node name="ViewController.cs" selected="True" />
+            <Node name="DeepLearning.Predication" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="DeepLearning.Prediction.Test" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="DeepLearning.Training" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -19,8 +32,11 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.DeepLearning.Training PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.DeepLearning.Prediction.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/martinstanek/Documents/Developing/Temp/playground.wasm/DeepLearning/DeepLearning.Training/DeepLearning.Prediction.Console/Program.cs" relfile="DeepLearning.Prediction.Console/Program.cs" line="10" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

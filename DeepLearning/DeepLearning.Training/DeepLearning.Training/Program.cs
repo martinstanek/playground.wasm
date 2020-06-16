@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using DeepLearning.Shared;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 
