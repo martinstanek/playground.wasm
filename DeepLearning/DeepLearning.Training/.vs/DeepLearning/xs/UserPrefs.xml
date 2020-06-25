@@ -1,42 +1,34 @@
-﻿<Properties StartupConfiguration="{3066F955-13D9-44D6-A75B-7AD839C841CB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DeepLearning.Predication/DeepLearning.Predication.csproj">
+﻿<Properties StartupConfiguration="{790281AB-4E70-4F77-A64D-B96F05A5A00C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DeepLearning.Server/Dockerfile">
     <Files>
-      <File FileName="DeepLearning.MacOS/ViewController.cs" Line="24" Column="41" />
-      <File FileName="DeepLearning.Prediction.Console/Program.cs" Line="14" Column="1" />
-      <File FileName="DeepLearning.Predication/Predicator.cs" Line="15" Column="1" />
-      <File FileName="DeepLearning.Predication/DeepLearning.Predication.csproj" Line="12" Column="79" />
+      <File FileName="DeepLearning.Server/Dockerfile" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DeepLearning" expanded="True">
-            <Node name="DeepLearning.Predication" expanded="True" selected="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="DeepLearning.Prediction.Test" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-            </Node>
-            <Node name="DeepLearning.Training" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="DeepLearning.Server" expanded="True" />
+            <Node name="docker-compose" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.DeepLearning.MacOS PreferredExecutionTarget="Test1" />
+  <MonoDevelop.Ide.ItemProperties.DeepLearning.MacOS PreferredExecutionTarget="Test1" HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DeepLearning.Server PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.DeepLearning.Training PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.DeepLearning.Prediction.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/martinstanek/Documents/Developing/Temp/playground.wasm/DeepLearning/DeepLearning.Training/DeepLearning.Prediction.Console/Program.cs" relfile="DeepLearning.Prediction.Console/Program.cs" line="10" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{D8E32A8D-8E67-4DC9-8217-FDD2B83FD318}" ItemName="DeepLearning.MacOS" ConfigurationId="Default" />
+        <StartupItem ItemId="{AD10E8FA-952D-4E3A-A935-686B6D58148C}" ItemName="DeepLearning.Server" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
 </Properties>

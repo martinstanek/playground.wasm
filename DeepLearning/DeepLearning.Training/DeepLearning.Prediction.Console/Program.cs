@@ -3,18 +3,16 @@ using DeepLearning.Predication;
 
 namespace DeepLearning.Prediction.Test
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            var predicator = new Predicator();
-
-            if (!string.IsNullOrWhiteSpace(args[0]))
+            if (!string.IsNullOrWhiteSpace(args[0]) && !string.IsNullOrWhiteSpace(args[1]))
             {
+                var predicator = new Predicator(args[1]);
+
                 Console.WriteLine(predicator.WhatIsOnImage(args[0]));
             }
-
-            Console.ReadLine();
         }
     }
 }

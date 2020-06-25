@@ -1,7 +1,8 @@
 ﻿using System;
+using System.IO;
 using AppKit;
+using DeepLearning.Server.Client;
 using Foundation;
-// using DeepLearning.Predication;
 
 namespace DeepLearning.MacOS
 {
@@ -17,11 +18,15 @@ namespace DeepLearning.MacOS
             ((ImageView) imgView).DraggingDidEnd += OnDraggingEnd;
         }
 
-        private void OnDraggingEnd(object sender, string path)
+        private async void OnDraggingEnd(object sender, string path)
         {
-            // var predication = new Predicator();
+            var classifierApi = new ClassifierApi("http://localhost:5000");
 
-            lblImage.StringValue = path;
+            using var fileStream = new FileStream(path, FileMode.Open);
+
+            var whatIsOnImage = await classifierApi.ClasisifyAsync(fileStream, Path.GetFileName(path));
+
+            lblImage.StringValue = "The image is: " + whatIsOnImage;
         }
 
         public override NSObject RepresentedObject => base.RepresentedObject;

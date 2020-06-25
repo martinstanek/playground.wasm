@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  deeplearning.server:
+    image: ${DOCKER_REGISTRY-}deeplearning
+    build:
+      context: .
+      dockerfile: DeepLearning.Server/Dockerfile
